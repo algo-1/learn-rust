@@ -62,7 +62,7 @@ fn main() {
     let some_u8_number= Some(100u8);
     if let Some(100) = some_u8_number {
         print_number_u8(some_u8_number);
-    } // no exhaustive checking (add else for that) but tbh 'match' looks way better, perhaps there'll be a case where it's more convenient to use the if let syntax  
+    }  // no exhaustive checking (add else for that) but tbh 'match' looks way better, perhaps there'll be a case where it's more convenient to use the if let syntax  
 
     match some_u8_number {
         Some(100) => print_number_u8(some_u8_number),
